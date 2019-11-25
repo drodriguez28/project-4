@@ -4,6 +4,8 @@ const app = express()
 
 
 const { fanRouter } = require('./controllers/fanController.js')
+const { gameRouter } = require('./controllers/gameController.js')
+
 
 
 
@@ -29,7 +31,15 @@ app.use(express.static(`${__dirname}/client/build`))
  * add router for the application to use. The first argument is a prefix to all
  * the paths defined in the router.
  */
+
+
 app.use('/api/fan', fanRouter)
+app.use('/api/game', gameRouter)
+
+
+
+
+
 
 /* Step 5
  *
