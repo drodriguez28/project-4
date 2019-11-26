@@ -11,6 +11,11 @@ export default class Header extends Component {
                     <Link to="/fans"> MX Fans</Link>
                 </button>
 
+                <button>
+                    <Link to="/fan/new">Create Fan</Link>
+                </button>
+
+
             </div>
         )
     }

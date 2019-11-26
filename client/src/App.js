@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import './App.css';
 import Fans from './components/Fans';
 import Header from './components/Header';
+import CreateFan from './components/Createfan';
+
 
 
 function App() {
@@ -12,6 +14,8 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/fans" component={Fans} />
+          <Route exact path="/fan/new" component={CreateFan} />
+
         </Switch>
       </Router>
     </div>
