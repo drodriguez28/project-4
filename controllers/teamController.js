@@ -27,3 +27,27 @@ teamRouter.get('/:id', (req, res) => {
             res.json(singleTeam)
         })
 })
+
+
+// create team
+teamRouter.post('/', (req, res) => {
+    teamApi.createTeam(req.body)
+        .then((createdTeam) => {
+            res.json(createdTeam)
+        })
+})
+
+
+
+//delete team
+teamRouter.delete('/:id', (req, res) => {
+    teamApi.deleteTeam(req.params.id)
+        .then((deletedTeam) => {
+            res.json(deletedTeam)
+        })
+})
+
+
+module.exports = {
+    teamRouter
+}
