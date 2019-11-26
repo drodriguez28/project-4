@@ -10,7 +10,7 @@ export default class Header extends Component {
                 <button>
                     <Link to="/fans"> MX Fans</Link>
                 </button>
-                
+
             </div>
         )
     }
