@@ -10,7 +10,8 @@ export default class Games extends Component {
     componentDidMount = () => {
         axios.get('/api/game')
             .then((response) => {
-                this.setState({ clients: response.data })
+                this.setState({ games: response.data })
+                // console.log(response.data)
             })
     }
 

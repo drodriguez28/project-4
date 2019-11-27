@@ -4,7 +4,7 @@ const mongoose = require('./connection.js')
 
 const GameSchema = new mongoose.Schema({
     name: String,
-    adress: String,
+    address: String,
     city: String,
     country: String,
     zipcode: Number

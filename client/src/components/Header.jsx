@@ -13,13 +13,16 @@ export default class Header extends Component {
                 <button>
                     <Link to="/games">Pick-Up Games</Link>
                 </button>
-                
+
                 <button>
                     <Link to="/teams">Liga MX Teams</Link>
                 </button>
 
                 <button>
                     <Link to="/fan/new">Create Fan</Link>
+                </button>
+                <button>
+                    <Link to="/game/new">Create Pick-Up Game</Link>
                 </button>
 
 
