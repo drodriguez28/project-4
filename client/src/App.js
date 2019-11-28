@@ -7,6 +7,7 @@ import Teams from './components/Teams';
 import Header from './components/Header';
 import CreateFan from './components/Createfan';
 import CreateGame from './components/Creategame';
+import CreateTeam from './components/Createteam';
 
 
 
@@ -22,6 +23,7 @@ function App() {
           <Route exact path="/teams" component={Teams} />
           <Route exact path="/fan/new" component={CreateFan} />
           <Route exact path="/game/new" component={CreateGame} />
+          <Route exact path="/team/new" component={CreateTeam} />
 
         </Switch>
       </Router>

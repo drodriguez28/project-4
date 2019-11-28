@@ -25,6 +25,9 @@ export default class Header extends Component {
                     <Link to="/game/new">Create Pick-Up Game</Link>
                 </button>
 
+                <button>
+                    <Link to="/team/new">Create Liga MX Team</Link>
+                </button>
 
 
             </div>

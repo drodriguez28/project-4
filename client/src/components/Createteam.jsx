@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from "axios"
-import { Link } from 'react-router-dom'
+import { Redirect } from 'react-router-dom'
 
 
 
@@ -46,6 +46,59 @@ export default class Createteam extends Component {
             <div>
                 <form onSubmit={this.addNewTeam}>
                     {this.state.redirect ? (<Redirect to={`/teams`} />) : null}
+
+                    <div>
+                        <input
+                            name="name"
+                            type="text"
+                            placeholder="name"
+                            value={this.state.newTeam.name}
+                            onChange={this.handleNewTeam}
+                        />
+                    </div>
+
+                    <div>
+                        <input
+                            name="title"
+                            type="text"
+                            placeholder="title"
+                            value={this.state.newTeam.title}
+                            onChange={this.handleNewTeam}
+                        />
+                    </div>
+                    <div>
+                        <input
+                            name="city"
+                            type="text"
+                            placeholder="city"
+                            value={this.state.newTeam.city}
+                            onChange={this.handleNewTeam}
+                        />
+                    </div>
+
+                    <div>
+                        <input
+                            name="yearfounded"
+                            type="number"
+                            placeholder="yearfounded"
+                            value={this.state.newTeam.yearfounded}
+                            onChange={this.handleNewTeam}
+                        />
+                    </div>
+
+                    <div>
+                        <input
+                        type="submit"
+                        value="Create Liga MX Team" 
+                        />
+                    </div>
+
+
+
+
+
+
+
 
                 </form>
             </div>
