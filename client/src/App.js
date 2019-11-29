@@ -9,6 +9,7 @@ import Header from './components/Header';
 import CreateFan from './components/Createfan';
 import CreateGame from './components/Creategame';
 import CreateTeam from './components/Createteam';
+import CreateTrash from './components/Createtrash';
 import FanDetails from './components/FanDetails';
 import GameDetails from './components/GameDetails';
 import TeamDetails from './components/TeamDetails';
@@ -33,6 +34,8 @@ function App() {
           <Route exact path="/fan/new" component={CreateFan} />
           <Route exact path="/game/new" component={CreateGame} />
           <Route exact path="/team/new" component={CreateTeam} />
+          <Route exact path="/trash/new" component={CreateTrash} />
+    
 
         </Switch>
       </Router>

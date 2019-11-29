@@ -17,6 +17,9 @@ export default class Header extends Component {
                 <button>
                     <Link to="/teams">Liga MX Teams</Link>
                 </button>
+                <button>
+                    <Link to="/trashs"> Trash Talk</Link>
+                </button>
 
                 <button>
                     <Link to="/fan/new">Create Fan</Link>
@@ -27,6 +30,9 @@ export default class Header extends Component {
 
                 <button>
                     <Link to="/team/new">Create Liga MX Team</Link>
+                </button>
+                <button>
+                    <Link to="/trash/new">Create Trash Talk </Link>
                 </button>
 
 
