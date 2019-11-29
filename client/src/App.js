@@ -4,6 +4,7 @@ import './App.css';
 import Fans from './components/Fans';
 import Games from './components/Games';
 import Teams from './components/Teams';
+import Trashs from './components/Trashs';
 import Header from './components/Header';
 import CreateFan from './components/Createfan';
 import CreateGame from './components/Creategame';
@@ -28,6 +29,7 @@ function App() {
           <Route exact path="/games" component={Games} />
           <Route exact path="/teams/:id" component={TeamDetails} />
           <Route exact path="/teams" component={Teams} />
+          <Route exact path="/trashs" component={Trashs} />
           <Route exact path="/fan/new" component={CreateFan} />
           <Route exact path="/game/new" component={CreateGame} />
           <Route exact path="/team/new" component={CreateTeam} />
