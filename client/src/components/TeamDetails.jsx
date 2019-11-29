@@ -43,11 +43,12 @@ export default class TeamDetails extends Component {
             return (
                 <div>
                     <h1>Team Info</h1>
-                    <h5>name: {this.state.fan.name}</h5>
+                    <h5>name: {this.state.team.name}</h5>
+                    <h5>title: {this.state.team.title}</h5>
+                    <h5>city: {this.state.team.city}</h5>
+                    <h5>yearfounded: {this.state.team.yearfounded}</h5>
 
-
-
-
+                    <button onClick={this.deleteTeam}> Delete</button>
 
 
                 </div>
