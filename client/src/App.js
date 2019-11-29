@@ -8,6 +8,8 @@ import Header from './components/Header';
 import CreateFan from './components/Createfan';
 import CreateGame from './components/Creategame';
 import CreateTeam from './components/Createteam';
+import FanDetails from './components/FanDetails';
+
 
 
 
@@ -18,6 +20,7 @@ function App() {
       <Router>
         <Header />
         <Switch>
+          <Route exact path="/fans/:id" component={FanDetails} />
           <Route exact path="/fans" component={Fans} />
           <Route exact path="/games" component={Games} />
           <Route exact path="/teams" component={Teams} />
