@@ -13,6 +13,7 @@ import CreateTrash from './components/Createtrash';
 import FanDetails from './components/FanDetails';
 import GameDetails from './components/GameDetails';
 import TeamDetails from './components/TeamDetails';
+import TrashDetails from './components/TrashDetails';
 
 
 
@@ -30,6 +31,7 @@ function App() {
           <Route exact path="/games" component={Games} />
           <Route exact path="/teams/:id" component={TeamDetails} />
           <Route exact path="/teams" component={Teams} />
+          <Route exact path="/trashs/:id" component={TrashDetails} />
           <Route exact path="/trashs" component={Trashs} />
           <Route exact path="/fan/new" component={CreateFan} />
           <Route exact path="/game/new" component={CreateGame} />
