@@ -40,10 +40,10 @@ export default class TrashDetails extends Component {
         } else {
             return (
                 <div>
-                    <h1>Trash Talk Info</h1>
+                    {/* <h1>Trash Talk Info</h1>
                     <h5>name: {this.state.trash.name}</h5>
-                    <h5>comment: {this.state.trash.comment}</h5>
-                    <button onClick={this.deleteTrash}> Delete</button>
+                    <h5>comment: {this.state.trash.comment}</h5> */}
+                    <button onClick={this.deleteTrash}> Delete Comment</button>
                 </div>
             )
         }

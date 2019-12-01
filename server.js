@@ -5,8 +5,8 @@ const app = express()
 
 const { fanRouter } = require('./controllers/fanController.js')
 const { gameRouter } = require('./controllers/gameController.js')
-const { teamRouter } = require('./controllers/teamController.js')
 const { trashRouter } = require('./controllers/trashController.js')
+const { teamRouter } = require('./controllers/teamController.js')
 
 
 
@@ -36,8 +36,8 @@ app.use(express.static(`${__dirname}/client/build`))
 
 app.use('/api/fan', fanRouter)
 app.use('/api/game', gameRouter)
-app.use('/api/team', teamRouter)
 app.use('/api/trash', trashRouter)
+app.use('/api/mxteams', teamRouter)
 
 
 

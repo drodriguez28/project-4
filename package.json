@@ -4,9 +4,10 @@
   "description": "# Setup",
   "main": "server.js",
   "dependencies": {
-    "concurrently": "^4.1.1",
+    "axios": "^0.19.0",
+    "concurrently": "^4.1.2",
     "express": "^4.17.1",
-    "mongoose": "^5.6.1"
+    "mongoose": "^5.7.13"
   },
   "engines": {
     "node": "10.x"

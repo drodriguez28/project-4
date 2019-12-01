@@ -27,7 +27,7 @@ export default class Trashs extends Component {
                 {this.state.trashs.map((trash) => {
                     return (
                         <div key={trash._id}>
-                            <Link to={"/trashs/" + trash._id}><h5>{trash.name}</h5></Link>
+                <Link to={"/trashs/" + trash._id}><h5>{trash.name+trash.comment}</h5></Link>
 
                         </div>
                     )

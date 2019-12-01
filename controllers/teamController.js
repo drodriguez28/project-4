@@ -1,53 +1,51 @@
 const express = require('express')
-
-
-const teamApi = require('../models/teamModel.js')
-
-
 const teamRouter = express.Router()
+const axios = require('axios');
 
 
 // get all 
 
 teamRouter.get('/', (req, res) => {
-    teamApi.getAllTeams()
-        .then((allTeams) => {
-            console.log(allTeams)
-            res.json(allTeams)
+
+    let apikey= process.env.APIKEY
+    
+    
+    let config = {
+        headers: {
+            "x-rapidapi-host": "api-football-v1.p.rapidapi.com",
+            "x-rapidapi-key": apikey
+        }
+
+    }
+
+    axios.get('https://api-football-v1.p.rapidapi.com/v2/teams/league/297', config)
+
+
+        .then((response) => {
+            // console.log(response.data.api.results)
+            // console.log(response.data.api.teams)
+        
+            teamsData = response.data.api.teams
+            mxteams = []
+
+
+            // for each item in the input array
+            for (index = 0; index < teamsData.length; index++) {
+                
+                mxteams.push(teamsData[index].name)
+            }
+            
+            res.json(mxteams)
+
+
+
+
 
         })
-})
-
-
-// get one 
-
-teamRouter.get('/:id', (req, res) => {
-    teamApi.getSingleTeam(req.params.id)
-        .then((singleTeam) => {
-            res.json(singleTeam)
-        })
-})
-
-
-// create team
-teamRouter.post('/', (req, res) => {
-    teamApi.createTeam(req.body)
-        .then((createdTeam) => {
-            res.json(createdTeam)
-        })
-})
-
-
-
-//delete team
-teamRouter.delete('/:id', (req, res) => {
-    teamApi.deleteTeam(req.params.id)
-        .then((deletedTeam) => {
-            res.json(deletedTeam)
-        })
-})
-
+}
+)
 
 module.exports = {
     teamRouter
 }
+

@@ -13,11 +13,39 @@ export default class Createfan extends Component {
             country: '',
             age: ''
         },
-        createdFanId: null
+        createdFanId: null,
+        mxTeams: []
     }
+    componentDidMount = () => {
+        axios.get('/api/mxteams')
+            .then((response) => {
+                console.log(response.data)
+                this.setState({ mxTeams: response.data })
+
+
+
+                // const newFan = { ...this.state.newFan };
+                // newFan[attributeName] = attributeValue;
+
+
+                // this.setState({ newFan })
+
+            })
+    }
+
+
+
+
+
+
+
     handleNewFan = (event) => {
+        console.log(this.state)
         const attributeName = event.target.name;
+        console.log(attributeName)
+
         const attributeValue = event.target.value;
+        console.log(attributeValue)
 
 
 
@@ -26,6 +54,7 @@ export default class Createfan extends Component {
 
 
         this.setState({ newFan })
+
 
     }
     addNewFan = (event) => {
@@ -79,13 +108,30 @@ export default class Createfan extends Component {
 
 
                     <div>
-                        <input
+                        <select
+                            name="team"
+                            value={this.state.newFan.team}
+                            onChange={this.handleNewFan} >
+                            {this.state.mxTeams.map(mxTeam => (
+                                <option key={mxTeam} value={mxTeam}>
+                                    {mxTeam}
+                                </option>
+                            ))}
+
+
+                        </select>
+
+
+
+
+
+                        {/* <input
                             name="team"
                             type="text"
                             placeholder="team"
                             value={this.state.newFan.team}
                             onChange={this.handleNewFan}
-                        />
+                        /> */}
                     </div>
 
                     <div>
