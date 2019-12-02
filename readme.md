@@ -1,8 +1,8 @@
 # Liga MX Fans 
 
-[Liga MX Fans]('https://el-don-galarga.herokuapp.com/fans')
+[Liga MX Fans](https://el-don-galarga.herokuapp.com/fans)
 
-[Github Project Board]('https://git.generalassemb.ly/drodriguez28/project-4')
+[Github Project Board](https://git.generalassemb.ly/drodriguez28/project-4)
 
 
 
