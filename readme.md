@@ -1,8 +1,8 @@
 # Liga MX Fans 
 
-[Liga MX Fans]
+[Liga MX Fans]('https://el-don-galarga.herokuapp.com/fans')
 
-[Github Project Board]
+[Github Project Board]('https://git.generalassemb.ly/drodriguez28/project-4')
 
 
 
@@ -19,6 +19,7 @@ Languages Used
 - Express 
 - React
 - CSS
+- Used 3rd Party API
  
 
  ## Future Development 
