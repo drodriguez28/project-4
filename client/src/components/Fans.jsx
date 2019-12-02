@@ -25,9 +25,9 @@ export default class Fans extends Component {
                         </div>
                     )
                 })}
-                {/* <footer><img src='./paintcan.jpeg' />
+                <footer><img src='./soccerteams.jpeg' />
 
-                </footer> */}
+                </footer>
             </div>
         )
     }

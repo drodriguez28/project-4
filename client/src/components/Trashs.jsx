@@ -32,9 +32,9 @@ export default class Trashs extends Component {
                         </div>
                     )
                 })}
-                {/* <footer><img src='./paintcan.jpeg' />
+                <footer><img src='./trashtalk.jpeg' />
 
-                </footer> */}
+                </footer>
             </div>
         )
     }

@@ -28,9 +28,9 @@ export default class Games extends Component {
                         </div>
                     )
                 })}
-                {/* <footer><img src='./homero.jpeg' />
+                <footer><img src='./pickupgame.jpeg' />
 
-                </footer> */}
+                </footer>
 
             </div>
         )
